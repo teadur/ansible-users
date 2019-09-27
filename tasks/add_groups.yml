@@ -17,4 +17,4 @@
   with_items: "{{ users }}"
   when: >
     users_per_user_groups == true and
-    item.state|default('present') != 'absent'
+    item.state|default('present') != "absent"
